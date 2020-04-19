@@ -75,4 +75,13 @@ public class EmployeeController {
     public void updateEmployee(@RequestBody Employee employee) {
         employeeService.update(employee);
     }
+
+    /**
+     * This method is used to get the total number of employee count.
+     * @return This will return employee count in string.
+     */
+    @RequestMapping(value = "/getemployeecount",method = RequestMethod.GET)
+    public String getEmployeeCount(){
+        return "Total number of employees are : "+employeeService.getEmployeeCount();
+    }
 }

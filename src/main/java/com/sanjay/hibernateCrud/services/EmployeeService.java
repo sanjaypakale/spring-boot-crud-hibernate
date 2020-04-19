@@ -47,4 +47,9 @@ public class EmployeeService implements IEmployeeService {
     public void update(Employee employee) {
         employeeDaoImp.update(employee);
     }
+
+    @Override
+    public int getEmployeeCount() {
+        return employeeDaoImp.getEmployeeCount();
+    }
 }
