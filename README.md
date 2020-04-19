@@ -6,6 +6,7 @@ How to run this application?
 
 1. clone the application in the local drive and open project in your fevorite IDE. I have used Intellij for development.
 2. Create an database and table by using below mysql script.
+3. change the db connection properties in the properties.yml file.
 
 CREATE DATABASE crudapi;
 use crudapi;
